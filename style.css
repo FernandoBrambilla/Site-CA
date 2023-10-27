@@ -8,6 +8,16 @@
     --corFundo: rgb(242, 239, 239);
     --corHover:rgba(255, 251, 251, 0.859);
 }
+
+
+html{
+    scroll-behavior: smooth;
+            
+ }
+ 
+   
+  
+
 #header{
     display: flex;
     position: top;
@@ -23,8 +33,11 @@
    position: fixed;
    right: 10px;
    bottom: 10px;
-   
+}
 
+.whats_icon img:hover{
+    transform: scale(1.2);
+   
 }
 header .title h1 {
     font-size: 40px;
@@ -53,9 +66,10 @@ header .title h1 {
         
                      
     }
-    a:hover{
+    .button a:hover{
         background-color: var(--corHover);
         border-radius: 3px; 
+        transform: scale(1.1);
         
         
     }
@@ -64,7 +78,6 @@ header .title h1 {
        
         background-image: url(Images/background_header.jpg);
         background-position: center ;
-          
         box-shadow: 3px 3px 3px var(--corFundo);
         background-attachment: scroll;
         height: 450px;
@@ -121,27 +134,31 @@ header .title h1 {
       
     }
 
-    
-    .serviços{
-        padding-top: 20px;
-        display: flex;
-        
-
-    }
-    .service_title{
-        font-family: var(--font1);
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 15px;
-    }
-
-    #serviços_link{
+     #serviços_link{     
         background-image: url(Images/background_header.jpg);
         background-position: center;
-        
+        padding-top: 15px;
+        align-items: center;
+        margin-top: 15px;
         
     }
-
+   
+    .service_title{
+        background-color: var(--corFundo);
+        font-family: var(--font1);
+        width: 180px;
+        height: 20px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+        opacity: 0.9;
+        border-radius: 3px;
+        box-shadow: 2px 2px 3px var(--corFundo);
+        
+    }
+   
     .serviços .text{
         display: flex;
         margin: auto;
@@ -177,13 +194,12 @@ header .title h1 {
        
     }
     .footer__container{
-    
-      display: flex;
+        display: flex;
       flex-direction: row;
       width: 100%;
       line-height: 2em;
-        height: 200px;
-        font-size: 18px;
+     height: 200px;
+    font-size: 18px;
        text-align: center;
        margin: auto;
        background-color: var(--corFundo);
