@@ -10,38 +10,95 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-
 <body>
-    <a id="back-to-top" onscroll="scroll()" href="#header"><i class="fa-solid fa-circle-up" style="color: rgb(5, 183, 241);"></i></a>
-
+    <a id="back-to-top" onscroll="scroll()" href="#header-link"><i class="fa-solid fa-circle-up" style="color: rgb(5, 183, 241);"></i></a>
     <header>
-        <section id="header">
-        <div class="logo">
-                <img  src="Images/logo_es.png" alt="Logo">
-        </div>
-        <div class="title">
-            <h1>Estruturas Metálicas</h1> 
-        </div>
-        <div class="button">
-            <ul>
-                <a href="#empresa_link">Empresa</a>
-                <a href="#serviços_link">Serviços</a>
-                <a href="">Galeria de Obras</a>
-                <a href="">Fale Conosco</a>
-            </ul>
-        </div>
-        <div class="whats_icon">
-           <a href="https://api.whatsapp.com/send?phone=5543991545356&text=Olá, estou vindo através do site, gostaria de falar com você" target="_blank"><img src="Images/whats_ico.png" alt="Whatsapp_icon" width="80"></a>
-        </div>
-         </section>   
+        <section id="header-link">
+            <div class="header-background">
+             
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <img  src="Images/logo_es.png" alt="Logo">
+                </div>
+                <div class="title">
+                    <h1>Estruturas Metálicas</h1> 
+                </div>
+                <div class="button">
+                    <ul>
+                        <a href="#empresa_link">Empresa</a>
+                        <a href="#services_link">Serviços</a>
+                        <a href="">Galeria de Obras</a>
+                        <a href="">Fale Conosco</a>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="whats_icon" on>
+                <a href="https://api.whatsapp.com/send?phone=5543991104489&text=Olá, estou vindo através do seu site, gostaria de falar com você!" target="_blank"><img src="Images/whats_ico.png" alt="Whatsapp_icon" width="80"></a>
+            </div>
+            </section>   
     </header>
     <main>
-        <div class="img_top"></div>
+        <section id="slider">
+            <div class="slider">
+                <div class="sliders">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <div class="slide first">
+                        <img src="Images/slider-01.jpg" alt="Foto 1">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-02.jpg" alt="Foto 2">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-03.jpeg" alt="Foto 3">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-04.jpg"Foto 4">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-05.jpg" alt="Foto 5">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-06.jpeg" alt="Foto 6">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/slider-07.jpeg" alt="Foto 7">
+                    </div>
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                    </div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                </div>
+            </div>
+            <script src="sliders.js"></script>  
+        </section>
         <section id="empresa_link">
-        <div class="empresa"> 
-            <div class="text">
-                        <H1>Nossa Empresa</H1>
-                        <p>A CA Estruturas Metálicas sugiu com o intúito de oferecer aos
+            <div class="empresa"> 
+                <div class="text">
+                    <H1>Nossa Empresa</H1>
+                        <p>
+                        A CA Estruturas Metálicas sugiu com o intúito de oferecer aos
                         nossos clientes mão de obra especializada e soluções em 
                         estruturas metálicas em construções civis em geral.
                         </p>  
@@ -52,83 +109,82 @@
                         accusantium, distinctio ipsa. Ducimus, saepe rem 
                         ratione fuga adipisci reprehenderit quia?
                         </p>
-                    </div> 
+                </div> 
                 <div class="img_lat">
             </div>
-            </section>
-            <section id="serviços_link">
-            <h1 class="service_title">Nossos Serviços</h1>
-             <div class="serviços"> 
-                    
-                    <div class="text">
-                            
-                            <div class="serv_desc">
-                                <h2>Estruturas</h2>
-                                <p>>Lorem ipsum dolor
-                                 sit amet consectetur adipisicing 
-                                 elit. Cupiditate laudantium minus
-                                  consequuntur vitae eius a quia 
-                                  sit neque nihil 
-                                </p>
-                            </div>
-                            <div class="serv_desc">
-                                <h2>Estruturas</h2>
-                                <p>Lorem ipsum dolor,
-                                 sit amet consectetur adipisicing 
-                                 elit. Nostrum quam fugit non dicta 
-                                 cupiditate esse dolor. Ducimus, 
-                                 neque earum? Officia
-                                </p>
-                            </div>
-                            <div class="serv_desc">
-                                <h2>Estruturas</h2>
-                                <p>Lorem ipsum dolor
-                                 sit amet, consectetur adipisicing 
-                                 elit. Nihil, tempore eius                             
-                                </p>
-                            </div>
-                            <div class="serv_desc">
-                                <h2>Estruturas</h2>
-                                <p>Lorem ipsum 
-                                dolor sit amet consectetur
-                                 adipisicing elit. Ex veritatis
-                                 unde sapiente animi ut, eius 
-                                 asperiores, consequuntur
-                    
-                                </p>
-                                </div>
-                                
-                            </div> 
-                        <div class="img_lat">
-                           
-                        
-                    </div>
-                    </section>
-        
-        
-    </main>
-    
-    <footer class="footer">
-        <div class="footer__container">
-            <section class="about-text">
-                <p>CA CONSTRUÇÃO CIVIL </p>
-                <p>CNPJ: 01.123.123/0001-11</p>
-                <p>Av. Presidente Vargas, 192</p>
-                <p>Marumbi - Pr</p>
-            </section>
-            <address>
-                <h2 class="footer__title">CONTATO</h2>
-                <ul><i class="fa-solid fa-envelope"></i> informaticabrambilla@gmail.com</ul>
-                <ul><i class="fa-solid fa-phone"></i> (43) 99967-8659</ul>
-                <ul><i class="fa-brands fa-whatsapp"></i> (43) 99967-8657</ul>
-            </address>
-          
-        </div>
-        <section class="footer__copyright">
-            &copy; Todos os direitos reservados 2023
-            <p class="footer__autor">Site Criado por FernandoHB</p>
-    
         </section>
+        <section id="services_link">
+                <div class="services-background"></div>
+                <div class="services">
+                    <h1 class="service_title">
+                        Nossos Serviços
+                    </h1> 
+                    <div class="text">       
+                        <div class="serv_desc">
+                            <h2>Estruturas</h2>
+                                <p>
+                                    Lorem ipsum dolor
+                                    sit amet consectetur adipisicing 
+                                    elit. Cupiditate laudantium minus
+                                    consequuntur vitae eius a quia 
+                                    sit neque nihil 
+                                </p>
+                        </div>
+                        <div class="serv_desc">
+                            <h2>Estruturas</h2>
+                                <p>
+                                    Lorem ipsum dolor,
+                                    sit amet consectetur adipisicing 
+                                    elit. Nostrum quam fugit non dicta 
+                                    cupiditate esse dolor. Ducimus, 
+                                    neque earum? Officia
+                                </p>
+                            </div>
+                            <div class="serv_desc">
+                                <h2>Estruturas</h2>
+                                    <p>
+                                        Lorem ipsum dolor
+                                        sit amet, consectetur adipisicing 
+                                        elit. Nihil, tempore eius                             
+                                    </p>
+                            </div>
+                            <div class="serv_desc">
+                                <h2>Estruturas</h2>
+                                    <p>
+                                        Lorem ipsum 
+                                        dolor sit amet consectetur
+                                        adipisicing elit. Ex veritatis
+                                        unde sapiente animi ut, eius 
+                                        asperiores, consequuntur
+                                    </p>
+                            </div>
+                        </div> 
+                    <div class="img_lat">
+                     </div>
+            </section>
+            
+        </main>
+
+    <footer class="footer">
+       
+            <div class="footer-container">
+                <div class="about-text">
+                    <p>CA CONSTRUÇÃO CIVIL </p>
+                    <p>CNPJ: 00.000.000/0001/10</p>
+                    
+                </div>
+                <address>
+                    <ul><i class="fa-solid fa-location-dot" style="color: #000000;"></i> Rua Matias Fernandes, 385 - Marumbi-Pr </ul>
+                    <ul><i class="fa-solid fa-envelope"></i> caconstrucao88@gmail.com</ul>
+                    <ul><i class="fa-brands fa-whatsapp"></i> (43) 99110-4489</ul>
+                </address>
+            </div>
+            <div  class="footer_autor">
+            &copy; Todos os direitos reservados 2023
+            <p>Site Criado por Brambilla Informática <a href="https://api.whatsapp.com/send?phone=5543991545356&text= Olá, gostaria de falar com você!" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #000000;"></i> (43) 999967-8659</a></p>
+        
+          </div>
+      
     </footer>
     
 </body>

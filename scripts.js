@@ -7,3 +7,4 @@ const backToTop = () => {
 window.addEventListener('scroll', function () {
 backToTop()
 });
+
