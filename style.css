@@ -404,7 +404,7 @@ html{
 
 
 
-@media screen and (max-width: 360px ) {
+@media screen and (max-width: 460px ) {
     
     label[for="btn_menu"]{
         visibility: visible;
@@ -470,7 +470,7 @@ html{
         border-radius: 3px;
         box-shadow: 2px 2px 2px var(--corShadow); 
         display: none;
-        transition: 1s;
+       
 
     }
     .button label{
