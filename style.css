@@ -413,28 +413,33 @@ html{
     
     }
     .whats_icon{
+        left: 10%;
+        bottom: 10%;
     
     }
 
     #back-to-top{
+        left: 10%;
+        bottom: 30%;
+        z-index: 10;
 
     }
     .header-background{
-        width: 360px;
-        height:100px; 
+        width: 100%;
+        height:150px; 
     }
     .header{
     display: inline-block;
     width: 100%;
-    height: 100px;
+    height: 150px;
     
     }
 
     .logo img{
     position: absolute;
     margin-top: 5px;
-     width: 80px;
-     height: 60px;
+     width: 130px;
+     height: 100px;
      left: 25px;
     
      
@@ -442,8 +447,8 @@ html{
     }
     .title{
         position:absolute;
-        margin-top: 60px;
-        margin-left: 25px;
+        margin-top: 100px;
+        margin-left: 50px;
         width: 80px;
         height: 45px;
         font-size: 10px;
@@ -493,23 +498,19 @@ html{
   
 
     #slider{
-        width: 350px;
-        margin: 0 auto;
-        box-shadow: 2px 2px 3px var(--corShadow);
-        border-radius: 3px;
+        width: 100%;
+       
     }
     
     .slider{
-        margin: 0 auto;
-        width: 350px;
-        height: 350px;
-        overflow: hidden;
-        box-shadow: 2px 2px 3px var(--corShadow);
+        
+        width: 100%;
+        
+        
     }
     
     .sliders{
-        
-        width: 200%;
+        width: 400%;
         height: 350px;
         display: flex;
     }
@@ -518,37 +519,13 @@ html{
         display: none;
     }
     
-    .slide{
-        width: 25%;
-        position: relative;
-        transition: 2s;  
-    }
-    
+       
     .slide img{
-        width: 350px;
-        border-radius: 3px;    
+        width: 600px;
+           
     }
-    
-    .nav-manual{
-        position: absolute;
-        width: 350px;
-        margin-top: -40px;
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    .manual-btn{
-        border: 2px white;
-        width: 22px;
-        height: 22px;
-        padding: 5px;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: 1s;
-        opacity: 0.7;
-    }
-    .manual-btn:not(:last-child){
+  
+     .manual-btn:not(:last-child){
         margin-right: 42px;
        
     
@@ -594,11 +571,8 @@ html{
     }
     
     .nav-auto{
-        position: absolute;
-        width: 900px;
-        margin-top: 310px;
-        display: flex;
-        justify-content: center;
+        width: 600px;
+        
     }
     
     .nav-auto div:not(:last-child){
