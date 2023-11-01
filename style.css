@@ -13,6 +13,12 @@
 html{
     scroll-behavior: smooth;          
 }
+.button input{
+    visibility: hidden;
+}
+.button label{
+    visibility: hidden;
+}
 
 #back-to-top {
     cursor: pointer;
@@ -72,11 +78,11 @@ html{
      
 }
 
-header .button{
+.button{
     margin-left: 200px;
    }
   
-header .button ul a {
+.button ul a {
     
     display: inline-flex;
     flex-direction: row;
@@ -398,34 +404,251 @@ header .button ul a {
 
 
 
-@media(max-width: 480px ) {
+@media screen and (max-width: 360px ) {
+    
+    label[for="btn_menu"]{
+        visibility: visible;
+        display: block;
+        transition: all .4s
+    
+    }
+    .whats_icon{
+    
+    }
 
+    #back-to-top{
+
+    }
+    .header-background{
+        width: 360px;
+        height:100px; 
+    }
+    .header{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    
+    }
+
+    .logo img{
+    position: absolute;
+    margin-top: 5px;
+     width: 80px;
+     height: 60px;
+     left: 25px;
+    
+     
+        
+    }
     .title{
-        background-color: aqua;
-}
-.logo{
-align-items: center;
-height: 100px;  
-background-size: cover;
-background-repeat: no-repeat;
+        position:absolute;
+        margin-top: 60px;
+        margin-left: 25px;
+        width: 80px;
+        height: 45px;
+        font-size: 10px;
+        text-align: center;     
+        
+    }
+    .button{
+        margin-left: 60%;
+       
+       
+       }
+    .button ul{
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+       
+        
+    }
+    .button ul a {
+        width: 90%;
+        background-color:var(--corFundo);
+        margin: 4px;
+        justify-content: center;
+        border-radius: 3px;
+        box-shadow: 2px 2px 2px var(--corShadow); 
+        display: none;
+        transition: 1s;
+
+    }
+    .button label{
+        margin: auto;
+        width: 50px;
+        text-align: center;
+        font-size: 40px;
+    
+        
+    }
+    
+    #btn_menu:checked ~ ul a{
+        display: block;
+        
+          
+               
+          
+       
+    }
+  
+
+    #slider{
+        width: 350px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 3px var(--corShadow);
+        border-radius: 3px;
+    }
+    
+    .slider{
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        box-shadow: 2px 2px 3px var(--corShadow);
+    }
+    
+    .sliders{
+        
+        width: 200%;
+        height: 350px;
+        display: flex;
+    }
+    
+    .sliders input{
+        display: none;
+    }
+    
+    .slide{
+        width: 25%;
+        position: relative;
+        transition: 2s;  
+    }
+    
+    .slide img{
+        width: 350px;
+        border-radius: 3px;    
+    }
+    
+    .nav-manual{
+        position: absolute;
+        width: 350px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .manual-btn{
+        border: 2px white;
+        width: 22px;
+        height: 22px;
+        padding: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 1s;
+        opacity: 0.7;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 42px;
+       
+    
+    }
+    
+    .manual-btn:hover{
+        background-color: white;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -50%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -75%;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -100%;
+    }
+    #radio6:checked ~ .first{
+        margin-left: -125%;
+    }
+    #radio7:checked ~ .first{
+        margin-left: -150%;
+    }
+    
+    .nav-auto div{
+        border: 2px solid white;
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 1s;
+    }
+    
+    .nav-auto{
+        position: absolute;
+        width: 900px;
+        margin-top: 310px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    #radio1:checked ~ .nav-auto .auto-btn1{
+        background-color: white;
+    }
+    
+    #radio2:checked ~ .nav-auto .auto-btn2{
+        background-color: white;
+    }
+    
+    #radio3:checked ~ .nav-auto .auto-btn3{
+        background-color: white;
+    }
+    
+    #radio4:checked ~ .nav-auto .auto-btn4{
+        background-color: white;
+    }
+    
+    #radio5:checked ~ .nav-auto .auto-btn5{
+        background-color: white;
+    }
+    
+    #radio6:checked ~ .nav-auto .auto-btn6{
+        background-color: white;
+    }
+    
+    #radio7:checked ~ .nav-auto .auto-btn7{
+        background-color: white;
+    }
+
+    .serv_desc{
+        width: 350px;
+        height: 200px;
+    }    
+    .services .text{
+        display: block;
+        
+    
+    }
+    
+    
+    
 
 
 }  
 
 
 
-}
 
-@media(max-width: 1200px){
-
-
-    
-.logo{
-    background-image: url(Images/logo_el.png);
-
-        
-    }
-
-  
-}
-    
