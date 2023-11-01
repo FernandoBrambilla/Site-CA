@@ -404,7 +404,7 @@ html{
 
 
 
-@media screen and (max-width: 460px ) {
+@media screen and (max-width: 600px ) {
     
     label[for="btn_menu"]{
         visibility: visible;
