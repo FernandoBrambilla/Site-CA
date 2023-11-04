@@ -27,6 +27,7 @@ html{
     right: 4%;
     bottom: 30%;
     visibility: hidden;   
+    z-index: 10;
 }
 
 #back-to-top:hover{
@@ -47,8 +48,9 @@ html{
 }
 .header-background{
     background-image: url(Images/background-header.jpeg);
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: bottom center;
     position: absolute;
     width: 100%;
     height: 120px;
@@ -135,6 +137,7 @@ html{
 
 .slide{
     width: 25%;
+    
     position: relative;
     transition: 2s;  
 }
@@ -294,8 +297,9 @@ html{
 }
 
 .services-background{
-    background-image: url(Images/slider-01.jpg);
+    background-image: url(Images/background-header.jpeg);
     background-size: cover;
+   background-attachment: fixed;
     background-position: center center;
     opacity: 0.3;
     width: 100%;
@@ -308,15 +312,6 @@ html{
 }
 
 .service_title{
-    position: relative;
-    margin: auto;
-    opacity: 0.9;
-    font-size: 30px
-    
-   
-}
-
-.service_title{
     font-family: var(--font1);
     padding: 10px;
     text-align: center;
@@ -326,23 +321,26 @@ html{
 .services .text{
     display: flex;
     margin: auto;
-   
+   }
 
-}
+   .services{
+    margin-bottom: 25px;
+    height: 450px;
+   
+   }
 
 .serv_desc{
     background-color: var(--corFundo);
-    width: 5000px;
+    width: 100%;
     height: 300px;
     margin: 15px;
     opacity: 0.9;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px var(--corFundo);
+    box-shadow: 2px 2px 3px var(--corShadow);
  
 }
-
 .serv_desc:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -355,6 +353,52 @@ html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
+
+.fotos-container{
+    width: 100%;
+    height: 660px;
+    position: relative;
+    
+}
+.line1{
+    background-color: var(--corFundo);
+    width: 95%;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 2px 2px 3px var(--corShadow);
+   
+}
+
+.line2{
+    background-color: var(--corFundo);
+    width: 95%;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 2px 2px 3px var(--corShadow);
+}
+
+
+
+.line1 img{
+   max-width: 450px;
+   max-height: 388px ;
+    margin: 10px;
+   
+   
+}
+.line2 img{
+    max-width: 450px;
+    max-height: 388px ;
+    margin: 10px;
+   
+    
+ }
 
 .footer{
   background-color: var(--corFundo);
@@ -408,27 +452,31 @@ html{
 
 
 @media screen and (max-width: 600px ) {
+  
     
     label[for="btn_menu"]{
         visibility: visible;
         display: block;
         transition: all .4s
-    
+   
     }
     .whats_icon{
-        left: 55%;
-        bottom: 10%;
-        position: fixed;
+
+       left: 10px;
+       top: 50%;
+       position: fixed;
+        
+        
     
     }
-
+   
     #back-to-top{
-        position: fixed;
-        font-size: 35px;
-        z-index: 10;
-        left: 57%;
-        bottom: 25%;
-        visibility: hidden;   
+    left: 10px;
+       top: 700px;
+       position: fixed;
+       z-index: 10;
+          
+       
     }
     
     .header-background{
@@ -448,6 +496,7 @@ html{
      width: 130px;
      height: 100px;
      left: 25px;
+     
     
      
         
@@ -463,15 +512,16 @@ html{
         
     }
     .button{
+        margin-top: 30px;
         margin-left: 60%;
-       
+        
        
        }
     .button ul{
         display: flex;
         flex-direction: column;
         margin-right: 25px;
-       
+        
         
     }
     .button ul a {
@@ -482,7 +532,7 @@ html{
         border-radius: 3px;
         box-shadow: 2px 2px 2px var(--corShadow); 
         display: none;
-       
+        
 
     }
     .button label{
@@ -490,7 +540,7 @@ html{
         width: 50px;
         text-align: center;
         font-size: 40px;
-    
+       
         
     }
     
@@ -501,6 +551,7 @@ html{
 
     #slider{
         width: 100%;
+        
     }
 
     .slider{
@@ -513,12 +564,12 @@ html{
        
     .slide img{
         width: 600px;
-           
+        
     }
   
      .manual-btn:not(:last-child){
-        margin-right: 43px;
-       
+        margin-right: 10px;
+        
     
     }
   
@@ -530,21 +581,15 @@ html{
     
     .nav-auto div:not(:last-child){
         margin-right: 25px;
-    }
-   
-    .serv_desc{
-        width: 350px;
-        height: 200px;
-    }    
-    .services .text{
-        display: block;
         
     }
+
     .empresa{
         margin-top: 0px;
         width: 100%;
         text-align: center;
         display: flex;
+        
         
     }
     
@@ -553,6 +598,7 @@ html{
         background-size: contain;
         background-repeat: no-repeat;
         width: 200px;
+        
     }
     #empresa_link h1{
         margin-top: 25px;
@@ -570,16 +616,27 @@ html{
         text-align: center;
         
     }
+   
+    .serv_desc{
+        width: 350px;
+        height: 200px;
+
+        
+    }    
+    .services .text{
+        display: block;
+               
+
+    }
+    
 
     .services{
+        width: 100%;
         height: 1500px;
         
     }
-    .services.text{
-        background-color: aqua;
-    }
-    
-       .services-background{
+           .services-background{
+            width: 100%;
         height: 1500px;
     }
 
@@ -587,8 +644,49 @@ html{
      width: 100%;
      height: 330px;
      justify-content: center;
+     
     
      
+    }
+
+    .fotos-container{
+        width: 100%;
+        height: 2470px;
+        
+        
+    }
+    .line1{
+        display: block;
+        width: 100%;
+        height: 1230px;   
+        margin: auto;
+        padding-top: 15px;
+       
+       
+    }
+    .line1 img{
+        margin: auto;
+       margin-top: 15px;
+        display: flex;
+        position: relative;
+        border-radius: 3px;
+        
+    }
+
+    .line2{
+        display: block;
+        width: 100%;
+        height: 1230px;
+        
+    }
+
+    .line2 img{
+        margin: auto;
+        
+         display: flex;
+         position: relative;
+         border-radius: 3px;
+         box-shadow: none;
     }
 
 
