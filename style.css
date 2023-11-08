@@ -29,7 +29,7 @@ html{
     cursor: pointer;
     position: fixed;
     font-size: 35px;
-    right: 4%;
+    left: 4%;
     bottom: 30%;
     visibility: hidden;   
     z-index: 10;
@@ -41,8 +41,8 @@ html{
 }
 
 .whats_icon{
-    position: fixed;
-    right: 2%;
+   position: fixed;
+    left: 2%;
     bottom: 5%;
     z-index: 10;
 }
@@ -459,8 +459,10 @@ html{
 
 @media screen and (max-width: 600px ) {
     
-    
-body{
+    html{
+        width: 100vh;
+    }
+    body{
     width: 100vh;
     
         
@@ -472,36 +474,19 @@ body{
         display: block;
         transition: all .4s
    
-    }
-    .whats_icon{
-
-       left: 10px;
-       top: 50%;
-       position: fixed;
-        
-        
-    
-    }
+    }  
    
-    #back-to-top{
-        left: 10px;
-       top: 700px;
-       position: fixed;
-       z-index: 10;
-          
-       
-    }
-    
     .header-background{
         width: 100vh;
         height:150px; 
     }
     .header{
     display: inline-block;
-    width: 100vh;
+    width: 100%;
     height: 150px;
     
     }
+   
 
     .logo img{
     position: absolute;
@@ -601,6 +586,7 @@ body{
     .empresa{
         margin-top: 0px;
         width: 100vh;
+        height: 500px;
         text-align: center;
         display: flex;
         
@@ -624,43 +610,30 @@ body{
         font-size: 30px;
         width: 100vh;
         height: 40px;
-        
-        
-       
         text-align: center;
         
     }
-   
-    .serv_desc{
-        width: 350px;
-        height: 200px;
-
-        
-    }    
+      
     .services .text{
         display: block;
-               
+        width: 85%;
+        margin: auto;
+        margin: 0px;
+
 
     }
     
 
     .services{
         width: 100vh;
-        height: 1500px;
+        height: 1300px;
+       
         
     }
     .services-background{
         width: 100vh;
-        height: 1500px;
-    }
-
-    .serv_desc{
-     width: 500px;
-     height: 330px;
-     justify-content: center;
-     
-    
-     
+        height: 1350px; 
+        margin-bottom: 15px;
     }
 
     .fotos-container{
@@ -713,6 +686,226 @@ body{
 
 
 }  
+
+@media screen and (max-width: 360px ) {
+    
+          
+    label[for="btn_menu"]{
+        visibility: visible;
+        display: block;
+        transition: all .4s
+   
+    }  
+   
+    .header-background{
+        width: 100vh;
+        height: 200px; 
+        background-size:100% 50%;
+        
+    }
+    .header{
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+        
+    }
+   
+
+    .logo img{
+    position: absolute;
+    margin-top: 5px;
+    width: 150px;
+    left: 25px; 
+            
+    }
+    .title{
+        position:absolute;
+        margin-top: 100px;
+        margin-left: 0px;
+        width: 150px;
+        height: 100px;
+        font-size: 19px;
+        left: 25px;  
+        
+    }
+    .button{
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 10%;
+            
+       
+       }
+
+    .button ul{
+        width: 190px;
+                  
+        
+    }
+    .button ul a {
+        font-size: 35px;
+        width: 180px;
+        background-color:var(--corFundo);
+        margin: 4px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 2px var(--corShadow); 
+        display: none;      
+
+    }
+    .button label{
+        
+        font-size: 60px;
+       
+        
+    }
+    
+    #btn_menu:checked ~ ul a{
+        display: block;
+        
+        
+    }
+
+    #slider{
+        width: 100vh;
+        
+    }
+
+    .slider{
+        width: 100vh;
+        
+        
+    }
+      
+    
+       
+    .slide img{
+        width: 100vh;
+        
+    }
+  
+     .manual-btn:not(:last-child){
+        margin-right: 10px;
+        
+    
+    }
+  
+     
+    .nav-auto{
+        width: 100vh;
+        
+    }
+    
+    .nav-auto div:not(:last-child){
+        margin-right: 25px;
+        
+    }
+
+    .empresa{
+        margin-top: 0px;
+        width: 100vh;
+        height: 500px;
+        text-align: center;
+        display: flex;
+        
+        
+    }
+    
+    .empresa .img_lat{
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        
+    }
+    #empresa_link h1{
+        margin-top: 25px;
+        margin-bottom: 0px;
+        background-color:var(--corFundo);
+        box-shadow: none;
+        border: none;
+        font-family: var(--font1);
+        font-size: 30px;
+        width: 100vh;
+        height: 40px;
+        text-align: center;
+        
+    }
+      
+    .services .text{
+        display: block;
+        width: 85%;
+        margin: auto;
+        margin: 0px;
+
+
+    }
+    
+
+    .services{
+        width: 100vh;
+        height: 1300px;
+       
+        
+    }
+    .services-background{
+        width: 100vh;
+        height: 1350px; 
+        margin-bottom: 15px;
+    }
+
+    .fotos-container{
+        width: 100vh;
+        height: 2470px;
+        
+        
+    }
+    .line1{
+        display: block;
+        width: 100vh;
+        height: 1230px;   
+        margin: auto;
+        padding-top: 15px;
+       
+       
+    }
+    .line1 img{
+        margin: auto;
+        margin-top: 15px;
+        display: flex;
+        border-radius: 3px;
+        
+    }
+
+    .line2{
+        padding-top: 5px;
+        display: block;
+        width: 100vh;
+        height: 1230px;
+        
+    }
+
+    .line2 img{
+        margin: auto;
+        padding-bottom: 15px;
+        display: flex;
+        border-radius: 3px;
+        
+    }
+
+    .footer{
+        width: 100vh;
+    }
+
+
+    
+    
+
+
+
+}  
+
+
+
+
 
 
 
