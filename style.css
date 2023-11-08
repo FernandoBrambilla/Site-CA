@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-*{margin: 0; padding: 0;}
+*{
+    margin: 0;
+    padding: 0;
+}
 
 :root{
     --font1:'Bree Serif';
@@ -10,8 +13,10 @@
     --corShadow: rgba(212, 212, 212, 0.889);
 }
 
+
 html{
-    scroll-behavior: smooth;          
+    scroll-behavior: smooth;
+              
 }
 .button input{
     visibility: hidden;
@@ -41,6 +46,7 @@ html{
     bottom: 5%;
     z-index: 10;
 }
+
 
 .whats_icon img:hover{
     transform: scale(1.2);
@@ -452,7 +458,14 @@ html{
 
 
 @media screen and (max-width: 600px ) {
-  
+    
+    
+body{
+    width: 100vh;
+    
+        
+    }
+    
     
     label[for="btn_menu"]{
         visibility: visible;
@@ -471,7 +484,7 @@ html{
     }
    
     #back-to-top{
-    left: 10px;
+        left: 10px;
        top: 700px;
        position: fixed;
        z-index: 10;
@@ -480,12 +493,12 @@ html{
     }
     
     .header-background{
-        width: 100%;
+        width: 100vh;
         height:150px; 
     }
     .header{
     display: inline-block;
-    width: 100%;
+    width: 100vh;
     height: 150px;
     
     }
@@ -514,6 +527,7 @@ html{
     .button{
         margin-top: 30px;
         margin-left: 60%;
+        
         
        
        }
@@ -550,12 +564,12 @@ html{
     }
 
     #slider{
-        width: 100%;
+        width: 100vh;
         
     }
 
     .slider{
-        width: 100%;
+        width: 100vh;
         
         
     }
@@ -563,7 +577,7 @@ html{
     
        
     .slide img{
-        width: 600px;
+        width: 100vh;
         
     }
   
@@ -575,7 +589,7 @@ html{
   
      
     .nav-auto{
-        width: 600px;
+        width: 100vh;
         
     }
     
@@ -586,7 +600,7 @@ html{
 
     .empresa{
         margin-top: 0px;
-        width: 100%;
+        width: 100vh;
         text-align: center;
         display: flex;
         
@@ -608,7 +622,7 @@ html{
         border: none;
         font-family: var(--font1);
         font-size: 30px;
-        width: 100%;
+        width: 100vh;
         height: 40px;
         
         
@@ -631,17 +645,17 @@ html{
     
 
     .services{
-        width: 100%;
+        width: 100vh;
         height: 1500px;
         
     }
-           .services-background{
-            width: 100%;
+    .services-background{
+        width: 100vh;
         height: 1500px;
     }
 
     .serv_desc{
-     width: 100%;
+     width: 500px;
      height: 330px;
      justify-content: center;
      
@@ -650,14 +664,14 @@ html{
     }
 
     .fotos-container{
-        width: 100%;
+        width: 100vh;
         height: 2470px;
         
         
     }
     .line1{
         display: block;
-        width: 100%;
+        width: 100vh;
         height: 1230px;   
         margin: auto;
         padding-top: 15px;
@@ -666,27 +680,30 @@ html{
     }
     .line1 img{
         margin: auto;
-       margin-top: 15px;
+        margin-top: 15px;
         display: flex;
-        position: relative;
         border-radius: 3px;
         
     }
 
     .line2{
+        padding-top: 5px;
         display: block;
-        width: 100%;
+        width: 100vh;
         height: 1230px;
         
     }
 
     .line2 img{
         margin: auto;
+        padding-bottom: 15px;
+        display: flex;
+        border-radius: 3px;
         
-         display: flex;
-         position: relative;
-         border-radius: 3px;
-         box-shadow: none;
+    }
+
+    .footer{
+        width: 100vh;
     }
 
 
