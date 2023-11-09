@@ -464,10 +464,7 @@ html{
 
 @media screen and (max-width: 428px ) {
       
-   html{
-    width: 90vh;
-   }
-
+ 
     label[for="btn_menu"]{
         visibility: visible;
         display: block;
