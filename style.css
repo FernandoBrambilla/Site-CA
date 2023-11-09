@@ -34,7 +34,7 @@ main{
     font-size: 35px;
     left: 4%;
     bottom: 30%;
-    display: none;
+    visibility: hidden;
     z-index: 10;
 }
 
@@ -349,7 +349,7 @@ main{
  
 }
 .serv_desc:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 0.3s;
 }
 
@@ -469,9 +469,9 @@ main{
       
  
     label[for="btn_menu"]{
-        visibility: visible;
-        display: block;
+       visibility: visible;
         transition: all .4s
+
    
     }  
    
