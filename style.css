@@ -18,6 +18,9 @@ html{
     scroll-behavior: smooth;
               
 }
+main{
+    overflow-x: hidden;
+}
 .button input{
     display: none;
 }
