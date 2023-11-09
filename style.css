@@ -458,17 +458,9 @@ html{
 
 
 
+@media screen and (max-width: 430px ) {
 
-@media screen and (max-width: 360px ) {
-    
-    html{
-        width: 360px;
-    }
-    body{
-        width: 360px;
-    
-        
-    }
+  
           
     label[for="btn_menu"]{
         visibility: visible;
@@ -478,268 +470,9 @@ html{
     }  
    
     .header-background{
-        width: 360px;
+       
         height: 200px; 
-        background-size:100% 40%;
-        background-position: center center;
-        
-    }
-    .header{
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-        
-    }
-   
-
-    .logo img{
-    position: absolute;
-    margin-top: 5px;
-    width: 150px;
-    left: 25px; 
-            
-    }
-    .title{
-        position:absolute;
-        margin-top: 100px;
-        margin-left: 0px;
-        width: 150px;
-        height: 100px;
-        font-size: 19px;
-        left: 25px;  
-        
-    }
-    .button{
-        position: absolute;
-        margin-left: 45%;
-        margin-top: 10%;
-            
-       
-       }
-
-    .button ul{
-        width: 190px;
-                  
-        
-    }
-    .button ul a {
-        font-size: 35px;
-        width: 180px;
-        background-color:var(--corFundo);
-        margin: 4px;
-        border-radius: 3px;
-        box-shadow: 2px 2px 2px var(--corShadow); 
-        display: none;      
-
-    }
-    .button label{
-        
-        font-size: 60px;
-       
-        
-    }
-    
-    #btn_menu:checked ~ ul a{
-        display: block;
-        
-        
-    }
-
-    #slider{
-        width: 100%;
-        
-    }
-
-    .slider{
-        width: 100%;
-        
-        
-        
-    }
-    .nav-manual{
-      width: 100%;
-        
-    }
-     
-    .nav-auto{
-        position: absolute;
-         width: 100%;
-        
-        
-    }
-    
-    .nav-auto div:not(:last-child){
-        margin-right: 8px;
-        
-    }
-
-    #empresa_link h1{
-        width: 100%;
-
-    }
-    
-
-    .empresa{
-        margin-top: 0px;
-        width: 100%;
-        height: 610px;
-        text-align: center;
-              
-        
-    }
-    
-    .empresa .img_lat{
-       display: none;
-       
-    }
-
-    .empresa .text{
-        width: 90%;
-        height: 590px;
-        margin: auto;
-        margin-top: 15px;
-        font-size: 22px;
-        
-    }
-
-    .service_title{
-        width: 100%;
-        
-       
-       
-    }
-      
-    #services_link{
-        width: 100%;
-    }
-    .services-background{
-        width: 100%;
-        height: 1330px;
-      background-size: 100% 70%;
-      
-
-    }
-
-    .services{
-        width: 100%;
-
-    }
-
-    .services .text{
-        display: block;
-        width: 90%;
-        margin: auto;
-        margin: 0px;
-        
-    }
-
-    .serv_desc h1{
-        font-size: 25px;
-       
-    }
-    
-    .fotos-container{
-        width: 100%;
-        height: 1800px; 
-    }
-    .line1{
-        display: block;
-        width: 100%;
-        height: 870px;   
-        margin: auto;
-       
-       
-       
-       
-    }
-    .line1 img{
-        width: 90%;
-        margin: auto;
-        margin-top: 10px;
-        display: flex;
-        border-radius: 3px;
-        
-    }
-
-    .line2{
-        
-        padding-top: 10px;
-        display: block;
-        width: 100%;
-        height: 900px; 
-        margin: auto;
-    
-        
-    }
-
-    .line2 img{
-        width: 90%;
-        margin: 0px;
-        margin: auto;
-       display: flex;
-        border-radius: 3px;
-       
-        
-    }
-    .footer-container{
-        margin-top: 15px;
-        display: block;
-        
-    }
-    .footer{
-        width: 100%;
-        
-     }
-
-     .about-text{
-        font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-     }
-
-    .footer address{
-        padding-top: 10px;
-        font-size: 18px;
-        text-align: center;
-        
-        
-        
-     }
-
-     .footer_autor{
-        margin-top: 15px;
-     }
-
-
-    
-    
-
-
-
-}  
-
-@media screen and (max-width: 400px ) {
-
-    html{
-        width: 400px;
-    }
-    body{
-        width: 400px;
-    
-        
-    }
-          
-    label[for="btn_menu"]{
-        visibility: visible;
-        display: block;
-        transition: all .4s
-   
-    }  
-   
-    .header-background{
-        width: 400px;
-        height: 200px; 
-        background-size:100% 40%;
+        background-size:100% 35%;
         background-position: center center;
         
     }
@@ -816,26 +549,34 @@ html{
     .slider{
         width: 100%;
         
-        
+       
         
     }
     .nav-manual{
-      width: 100%;
+        
+        width: 100%;
+ 
         
     }
-     
+    
+    .manual-btn:not(:last-child){
+        margin-right: 21px;
+       
+    
+    }
+    
+   
+    
     .nav-auto{
-        position: absolute;
-         width: 100%;
+       width: 100%;
+        
         
         
     }
     
     .nav-auto div:not(:last-child){
-        margin-right: 8px;
-        
+        margin-right: 20px;
     }
-
     #empresa_link h1{
         width: 100%;
 
@@ -879,7 +620,7 @@ html{
     }
     .services-background{
         width: 100%;
-        height: 1400px;
+        height: 1350px;
       background-size: 100% 70%;
       
 
@@ -905,12 +646,13 @@ html{
     
     .fotos-container{
         width: 100%;
-        height:1950px; 
+        height:2020px; 
         }
     .line1{
+       
         display: block;
         width: 100%;
-        height: 955px;   
+        height: 1000px;   
         margin: auto;
         padding-top: 10px;
        
@@ -932,7 +674,7 @@ html{
         padding-top: 15px;
         display: block;
         width: 100%;
-        height: 955px; 
+        height: 1000px; 
         margin: auto;
     
         
@@ -973,6 +715,8 @@ html{
 
      .footer_autor{
         margin-top: 15px;
+        font-size: 12px;
+        line-height: 1.5em;
      }
 
 
@@ -980,6 +724,80 @@ html{
     
 }
 
+
+@media screen and (max-width: 360px ) {
+ 
+   
+    .button{
+        
+        margin-left: 250px;
+
+    }
+    .button ul{
+       
+        left: 30%;
+        width: 180px;
+                
+  }
+
+    .button ul a {
+       
+        font-size: 28px;
+        width: 180px;
+         
+
+    }
+    .button label{  
+     font-size: 50px;
+       
+        
+    }
+    #slider{
+        width: 100%;
+        
+    }
+
+    .slider{
+        width: 100%;
+        
+        
+        
+    }
+    .nav-auto div:not(:last-child){
+        margin-right: 19.5px;
+        
+    }
+
+    .fotos-container{
+        height:1770px; 
+        }
+
+    .line1{
+        height: 870px;   
+      
+       
+       
+       
+    }
+
+    .line2{
+        padding-top: 10px;
+        height: 870px; 
+        
+    
+        
+    }
+
+
+
+    .footer address{
+       
+        font-size: 18px;
+ 
+     }
+   
+    
+}
 
 
 
