@@ -61,7 +61,7 @@ main{
     background-attachment: fixed;
     background-position: bottom center;
     position: absolute;
-    width: 100vh;
+    width: 100%;
     height: 120px;
     opacity: 0.15;
     z-index: -1;
@@ -469,6 +469,7 @@ main{
       
  
     label[for="btn_menu"]{
+        display: block;
        visibility: visible;
         transition: all .4s
 
