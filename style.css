@@ -264,7 +264,7 @@ main{
 .empresa{
     display:  flex;
     flex-direction: row;
-    width: 80%;
+    width:60%;
     align-items: center;
     margin: auto;
     margin-bottom: 25px;
@@ -274,8 +274,8 @@ main{
 }
 
 .text{
-    width: 80%;
-    height: 350px;   
+    width: 100%;
+    height: auto;   
 }
 
 #empresa_link h1{
@@ -342,12 +342,18 @@ main{
 .serv_desc{
     background-color: var(--corFundo);
     width: 100%;
-    height: 300px;
+    height: auto;
     margin: 15px;
     opacity: 0.9;
     border-radius: 3px;
     box-shadow: 2px 2px 3px var(--corShadow);
  
+}
+#img-services {
+    width: 100%;
+    height: 150px;
+    bottom: 1px;
+
 }
 .serv_desc:hover{
     transform: scale(1.03);
