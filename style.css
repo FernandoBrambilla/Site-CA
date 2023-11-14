@@ -66,6 +66,7 @@ main{
     opacity: 0.15;
     z-index: -1;
     
+    
 }
 
 .header{
@@ -296,8 +297,8 @@ main{
 
 .empresa .img_lat{
     background-image: url(Images/logo_el.png);
-    background-size: cover;
-    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
     align-items: center; 
     margin-right: 20px;
     width: 450px;
@@ -375,9 +376,10 @@ main{
 }
 .line1{
     
-    width: 95%;
-    height: 350px;
+    width: 80%;
+    height: auto;
     margin: auto;
+    
     display: flex;
     justify-content: center;
     border-radius: 3px 3px 0px 0px;
@@ -387,8 +389,8 @@ main{
 
 .line2{
     
-    width: 95%;
-    height: 350px;
+    width: 80%;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -399,16 +401,16 @@ main{
 
 
 .line1 img{
-   max-width: 450px;
-   max-height: 388px ;
-    margin: 10px;
+   width: 400px;
+   height: 388px ;
+   margin: 3px;
    
    
 }
 .line2 img{
-    max-width: 450px;
-    max-height: 388px ;
-    margin: 10px;
+    width: 400px;
+   height: 388px ;
+   margin: 3px;
    
     
  }
@@ -463,206 +465,187 @@ main{
     color: black;
 }
 
-
-
-@media screen and (max-width: 428px ) {
-      
- 
-    label[for="btn_menu"]{
+@media screen and (max-width: 1270px ){
+    .line1{
+        padding-top: 15px;
         display: block;
-       visibility: visible;
-        transition: all .4s
-
-   
-    }  
-   
-    .header-background{
-        width: 100%;
-        height: 200px; 
-        background-size:100% 30%;
-        background-position: center center;
-        box-shadow: none;
+        width: 80%;
+        height: auto;
+        margin: auto;
         
-    }
-    .header{
-    display: inline-block;
-    width: 100%;
-    height: 200px;
-    box-shadow: none;
-        
-    }
-   
-
-    .logo img{
-    position: absolute;
-    margin-top: 5px;
-    width: 150px;
-    left: 25px; 
-            
-    }
-    .title{
-        position:absolute;
-        margin-top: 100px;
-        margin-left: 0px;
-        width: 150px;
-        height: 100px;
-        font-size: 19px;
-        left: 25px;  
-        
-    }
-    .button{
-        
-        
-        margin-left: 75%;
-        margin-top: 33px;
-
-    }
-    .button ul{
-        position: absolute;
-        left: 30%;
-        width: 220px;
-        margin-right: 10px;
-        margin-left: 50px;
-        z-index: 10;         
-  }
-
-    .button ul a {
        
-        font-size: 25px;
-        width: 210px;
-        background-color: var(--corFundo);
-        margin: 4px;
+       
+       
+    }
+    .line1 img{
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
         border-radius: 3px;
-        box-shadow: 2px 2px 2px var(--corShadow); 
-        display: none;      
+               
+    }
 
-    }
-    .button label{  
-     font-size: 60px;
-       
+    .line2{
         
-    }
-    
-    #btn_menu:checked ~ ul a{
+        padding-top: 15px;
         display: block;
+        width: 80%;
+        height: auto;
+        margin: auto;
         
         
     }
 
-    #slider{
-        width: 100%;
-        box-shadow: none;
-        
-    }
-
-    .slider{
-        width: 100%;
-        box-shadow: none;
-        
+    .line2 img{
+        width: 75%;
+        margin: 0px auto 10px;
+        display: flex;
+        border-radius: 3px;
        
+}
+}
+
+@media screen and (max-width: 720px ){
+        .header-background{
+            height: 200px;
+        }
+        .header{
+            display: inline-block;
+            height: 200px;
+        }
+           
         
-    }
+        .logo img{
+            position: absolute;
+            margin-top: 5px;
+            width: 150px;
+            left: 25px; 
+                    
+            }
+            .title{
+                position:absolute;
+                margin-top: 100px;
+                margin-left: 0px;
+                width: 150px;
+                height: 100px;
+                font-size: 19px;
+                left: 25px;  
+                
+            }
+            .title h1{
+                text-align: center;
+            }
+            
+            .button ul{
+                display: flex;
+                margin-top: 130px;
+            
+                
+          }
+        
+            .button ul a {
+        
+                font-size:22px;
+                width: 210px;
+                margin: 4px;
+                padding: 0px;
+                
+                   
+        
+            }
+    
+   
+    
+    
     .nav-manual{
         
         width: 100%;
- 
+        margin-top: -40px;
         
     }
     
-    .manual-btn:not(:last-child){
-        margin-right: 21px;
+   .manual-btn:not(:last-child){
+        margin-right: 42px;
        
     
+    }
+    
+    
+    
+    .nav-auto div{
+        border: 2px solid white;
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: 1s;
+    }
+    
+    .nav-auto{
+         width: 100%;
+        
     }
     
    
-    
-    .nav-auto{
-       width: 100%;
-        
-        
-        
-    }
-    
-    .nav-auto div:not(:last-child){
-        margin-right: 19.5px;
-    }
-    #empresa_link h1{
-        width: 100%;
-        box-shadow: none;
-
-    }
-    
-
     .empresa{
-        margin-top: 0px;
-        width: 100%;
-        height: auto;
-        text-align: center;   
-        box-shadow: none;   
-        
+       
+        width: 90%;
+       
+    }
+    
+    .text{
+        width: 90%;
+        height: auto;   
+    }
+    
+    #empresa_link h1{
+        width:100%;
+       
+    }
+    
+    .text p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: justify;
+        line-height: 1.52em;
+        padding: 20px 20px 20px 10px;
     }
     
     .empresa .img_lat{
-       display: none;
+         width:300px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
        
-    }
-
-    .empresa .text{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        margin-top: 15px;
-        font-size: 22px;
         
     }
-    .services{
-        height: 1330px;
-    }
-
-    .service_title{
-        width: 100%;
-        box-shadow: none;
-        
-       
-       
-    }
-      
-    #services_link{
-        width: 100%;
-        box-shadow: none;
-    }
-    .services-background{
-        width: 100%;
-        box-shadow: none;
-     
     
-      
-
-    }
-
-    .services{
-        width: 100%;
-        box-shadow: none;
-
-    }
-
+    
+    
+    
+    
     .services .text{
-       
-        
         display: block;
         
+        margin: auto;
+       }
+    
+       .services{
+        margin-bottom: 25px;
+        height: auto;
         
-        
-    }
-
-    .serv_desc h1{
-        font-size: 25px;
        
-    }
-    #fotos{
+       }
+    
+    .serv_desc{
+        
+        margin: 0px;
+        margin-bottom: 10px;
         width: 100%;
-        box-shadow: none;
+        height: 300px;
+           
     }
     .fotos-container{
         width: 100%;
@@ -707,18 +690,213 @@ main{
         display: flex;
         border-radius: 3px;
        
+    
+   
+   
+   
+    
+    
+}
+}
+
+@media screen and (max-width: 550px ){
+    
+    label[for="btn_menu"]{
+        display: block;
+       visibility: visible;
+        transition: all .4s
+
+   
+    }  
+   
+    .header-background{
+       
+        background-size:100% 60%;
+        
+                
+    }
+    .button{
+        margin-left: 75%;
+        margin-top: 50px;
+    }
+    .button ul{
+        position: absolute;
+        left: 40%;
+        display:block;
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 50px;
+        margin-top: 10px;
+        z-index: 10;         
+  }
+
+    .button ul a {
+        font-size: 30px;
+        width: 200px;
+        background-color: var(--corFundo);
+        margin: 6px;
+        padding-left: 10px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 2px var(--corShadow); 
+        display: none;      
+
+    }
+    .button label{  
+     font-size: 60px;
+       
         
     }
+    
+    #btn_menu:checked ~ ul a{
+        display: block;
+        
+        
+    }
+    .empresa .img_lat{
+        width: 150px;
+        height: 90px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 430px ) {
+    .header-background{
+        background-size:100% 50%;
+    }
+
+    .logo img{
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 120px;
+    }
+
+    .header .title h1{
+        font-size: 25px;  
+    }
+
+    .button ul{
+        left: 30%;
+        width: 170px;
+        margin-right: 10px;
+        margin-left: 50px;
+        z-index: 10;         
+    }
+
+    .button ul a {
+        font-size: 20px;
+        width: 170px;
+        margin: 8px;
+    }
+
+    .button label{  
+     font-size: 50px;    
+    }
+
+    #slider{
+
+        width: 100%;
+        height: 250px;
+    }
+    .slider{
+        width: 100%;
+        height: 250px;
+       
+       
+    }
+    .slider{
+        width: 100%;
+        height: 250px;
+    }
+    .slide img{
+       width: 430px;
+        height: 250px;
+    }
+    .nav-manual{
+        margin-top: -139px;
+    }
+    .nav-auto{
+        margin-top: 210px;
+    }
+   
+   
+
+
+
+
+   
+ 
+    
+    
+    .manual-btn:not(:last-child){
+        margin-right: 21.3px;
+       
+    
+    }    
+    .nav-auto div:not(:last-child){
+        margin-right: 19.5px;
+    }
+    #empresa_link h1{
+        font-size: 22px;
+        box-shadow: none;
+
+    }
+    
+    .empresa .img_lat{
+       display: none;
+       
+    }
+
+    .empresa .text{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 15px;
+        font-size: 16px;
+        
+    }
+    .services{
+        height: auto;
+    }
+
+    .service_title{
+        width: 100%;
+        box-shadow: none;
+        font-size: 22px;
+       
+       
+    }
+      
+    #services_link{
+        width: 100%;
+        box-shadow: none;
+    }
+    
+
+    .services{
+        width: 100%;
+        box-shadow: none;
+
+    }
+
+
+    .serv_desc h2{
+        font-size: 20px;
+       
+    }
+    .serv_desc p{
+        font-size: 16px;
+    }
+   
     .footer-container{
         margin-top: 15px;
         display: block;
         
     }
-    .footer{
-        width: 100%;
-        box-shadow: none;
-        
-     }
+   
 
      .about-text{
         font-size: 20px;
@@ -728,7 +906,7 @@ main{
 
     .footer address{
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         
         
@@ -760,10 +938,3 @@ main{
     }
   
 }
-
-
-
-
-
-
-
