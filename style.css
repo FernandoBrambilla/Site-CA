@@ -8,22 +8,24 @@
 :root{
     --font1:'Bree Serif';
     --font2:Lucida;
-    --corFundo: #cbc6c6;
+    --corFundo: #a6bee2;
     --corHover:rgba(255, 251, 251, 0.859);
     --corShadow: rgba(212, 212, 212, 0.889);
 }
-
 
 html{
     scroll-behavior: smooth;
               
 }
+
 main{
     overflow-x: hidden;
 }
+
 .button input{
     display: none;
 }
+
 .button label{
     display: none;
 }
@@ -50,11 +52,11 @@ main{
     z-index: 10;
 }
 
-
 .whats_icon img:hover{
     transform: scale(1.2);
     transition: 0.2s;
 }
+
 .header-background{
     background-image: url(Images/background-header.jpeg);
     background-size: contain;
@@ -64,9 +66,7 @@ main{
     width: 100%;
     height: 120px;
     opacity: 0.15;
-    z-index: -1;
-    
-    
+    z-index: -1;   
 }
 
 .header{
@@ -78,24 +78,20 @@ main{
     z-index: 10;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 2px 3px var(--corShadow);
-  
-   
+    box-shadow: 2px 2px 3px var(--corShadow); 
 }
 
 .title{
     font-size: 20px;
     font-family: var(--font1);
     letter-spacing: 0.8px;
-     
 }
 
 .button{
     margin-left: 200px;
-   }
+}
   
-.button ul a {
-    
+.button ul a { 
     display: inline-flex;
     flex-direction: row;
     margin-top: 15%;
@@ -105,12 +101,10 @@ main{
     margin-right: 30px;
     color: black;
     padding: 5px;
-    z-index: 10;
-    
+    z-index: 10;    
 }
 
 .button a:hover{
-    
     background-color: var(--corHover);
     border-radius: 3px; 
     transform: scale(1.1);
@@ -119,14 +113,12 @@ main{
 #slider{
     background-color: var(--corFundo);
     width: 100%;
-    
     margin: 0 auto;
     box-shadow: 2px 2px 3px var(--corShadow);
     border-radius: 3px;
 }
 
 .slider{
-    
     margin: 0 auto;
     width: 800px;
     height: 350px;
@@ -134,8 +126,7 @@ main{
     box-shadow: 2px 2px 3px var(--corShadow);
 }
 
-.sliders{
-    
+.sliders{ 
     width: 400%;
     height: 350px;
     display: flex;
@@ -147,7 +138,6 @@ main{
 
 .slide{
     width: 25%;
-    
     position: relative;
     transition: 2s;  
 }
@@ -163,7 +153,6 @@ main{
     margin-top: -40px;
     display: flex;
     justify-content: center;
-    
 }
 
 .manual-btn{
@@ -176,10 +165,9 @@ main{
     transition: 1s;
     opacity: 0.7;
 }
+
 .manual-btn:not(:last-child){
     margin-right: 42px;
-   
-
 }
 
 .manual-btn:hover{
@@ -193,6 +181,7 @@ main{
 #radio2:checked ~ .first{
     margin-left: -25%;
 }
+
 #radio3:checked ~ .first{
     margin-left: -50%;
 }
@@ -200,12 +189,15 @@ main{
 #radio4:checked ~ .first{
     margin-left: -75%;
 }
+
 #radio5:checked ~ .first{
     margin-left: -100%;
 }
+
 #radio6:checked ~ .first{
     margin-left: -125%;
 }
+
 #radio7:checked ~ .first{
     margin-left: -150%;
 }
@@ -309,7 +301,7 @@ main{
 .services-background{
     background-image: url(Images/background-header.jpeg);
     background-size: cover;
-   background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center center;
     opacity: 0.3;
     width: 100%;
@@ -317,8 +309,7 @@ main{
     position: absolute;
     z-index: -1;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px var(--corShadow);
-    
+    box-shadow: 2px 2px 3px var(--corShadow); 
 }
 
 .service_title{
@@ -333,11 +324,10 @@ main{
     margin: auto;
    }
 
-   .services{
+.services{
     margin-bottom: 25px;
     height: 450px;
-   
-   }
+}
 
 .serv_desc{
     background-color: var(--corFundo);
@@ -349,11 +339,13 @@ main{
     box-shadow: 2px 2px 3px var(--corShadow);
  
 }
+
 #img-services {
     width: 100%;
     height: 150px;
     border-radius: 3px;
 }
+
 .serv_desc:hover{
     transform: scale(1.03);
     transition: 0.3s;
@@ -374,57 +366,48 @@ main{
     box-shadow: 2px 2px 3px var(--corShadow);
     
 }
+
 .fotos-container{
     width: 100%;
-    position: relative;
-    
+    position: relative; 
 }
-.line1{
-    
+
+.line1{ 
     width: 80%;
     height: auto;
     margin: auto;
-    
     display: flex;
     justify-content: center;
     border-radius: 3px 3px 0px 0px;
-   
-   
 }
 
 .line2{
-    
     width: 80%;
     height: auto;
     margin: auto;
     display: flex;
     justify-content: center;
-    border-radius: 3px 3px 0px 0px;
-    
+    border-radius: 3px 3px 0px 0px; 
 }
-
-
 
 .line1 img{
    width: 400px;
    height: 388px ;
    margin: 3px;
-   
-   
+    
 }
+
 .line2 img{
     width: 400px;
    height: 388px ;
-   margin: 3px;
-   
-    
- }
+   margin: 3px; 
+}
 
 .footer{
-  background-color: var(--corFundo);
+    background-color: var(--corFundo);
 }
+
 .footer-container{
-   
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -434,8 +417,7 @@ main{
     text-align: center;
     margin: auto;
     margin-top: 65px;
-    font-family: var(--font1);
-    
+    font-family: var(--font1);   
 }
 
 .about-text{
@@ -477,27 +459,22 @@ main{
         width: 80%;
         height: auto;
         margin: auto;
-        
-   
     }
+
     .line1 img{
         width: 75%;
         margin: auto;
         margin-top: 10px;
         display: block;
-        border-radius: 3px;
-               
+        border-radius: 3px;         
     }
 
     .line2{
-        
         padding-top: 15px;
         display: block;
         width: 80%;
         height: auto;
         margin: auto;
-        
-        
     }
 
     .line2 img{
@@ -505,119 +482,113 @@ main{
         margin: 0px auto 10px;
         display: flex;
         border-radius: 3px;
-      
-        
-}
-    #img-services{
-        
     }
 }
 
 @media screen and (max-width: 1120px ){
     .button{
         margin: 0px;
+        margin-left: 20px;
+        padding: 0px; 
     }
+
     .button  ul{
-        width: 500px;
         margin: 0px;
-        
-        margin-left: 40px;
-        margin-top: 15%;
-      
+        margin-top: 20%;
     }
     
     .button ul a {
-        margin: 20px;
-        padding: 0px;
-}
-#img-services{
-    
-    height: auto;
-    padding-top: 10px;
-    position: relative;
-    
-    
-    
-}
+        margin: 5px;
+    }
 
-.serv_desc{
-    margin: 0px;
-    margin: 5px;
-    
-    
+    #img-services{
+        height: auto;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .serv_desc{
+        margin: 0px;
+        margin: 5px;
+    }
 }
 
+@media screen and (max-width: 1000px ){
+    .header .title{
+        font-size: 18px;
+        width: 150px;
+        text-align: center;
+    }
 
+    .button{
+        margin: 0px;
+        margin-left: 25px;
+        padding: 0px;  
+    }
+
+    .button  ul{
+        margin: 0px;
+        margin-top: 20%;
+    } 
+
+    .button ul a {
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 720px ){
-        .header-background{
-            height: 200px;
-        }
-        .header{
-            display: inline-block;
-            height: 200px;
-        }
-           
-        
-        .logo img{
-            position: absolute;
-            margin-top: 5px;
-            width: 150px;
-            left: 25px; 
-                    
-            }
+    .header-background{
+         height: 180px;
+    }
 
-            .title{
-                position:absolute;
-                margin-top: 100px;
-                margin-left: 0px;
-                width: 150px;
-                height: 100px;
-                font-size: 19px;
-                left: 25px;  
-                
-            }
-            .title h1{
-                text-align: center;
-            }
+    .header{
+         display: inline-block;
+        height: 180px;
+    }  
+        
+    .logo img{
+        position: absolute;
+        margin-top: 5px;
+        width: 150px;
+        left: 25px; 
+    }
+
+    .title{
+        position:absolute;
+        margin-top: 100px;
+        margin-left: 0px;
+        width: 150px;
+        height: 100px;
+        font-size: 19px;
+        left: 25px;  
+    }
+
+    .title h1{
+        text-align: center;
+    }
             
-            .button ul{
-                display: flex;
-               margin-top: 130px;
-            
-                
-          }
-          
-        
-            .button ul a {
-        
-                font-size:22px;
-                width: 210px;
-                margin: 4px;
-                padding: 0px;
-                
-                   
-        
-            }
-    
-   
-    
-    
+    .button ul{            
+        width: 400px;
+        display: flex;
+        margin-top:15%;
+        margin-left: 35%;   
+    }
+              
+    .button ul a {
+        font-size:22px;
+        width: 200px;
+        margin: 10px;
+        padding: 0px;
+    }
+
     .nav-manual{
-        
         width: 100%;
         margin-top: -40px;
-        
     }
     
    .manual-btn:not(:last-child){
         margin-right: 42px;
-       
-    
     }
-    
-    
     
     .nav-auto div{
         border: 2px solid white;
@@ -631,15 +602,11 @@ main{
     }
     
     .nav-auto{
-         width: 100%;
-        
+        width: 100%;
     }
     
-   
     .empresa{
-       
         width: 90%;
-       
     }
     
     .text{
@@ -649,7 +616,6 @@ main{
     
     #empresa_link h1{
         width:100%;
-       
     }
     
     .text p{
@@ -660,82 +626,63 @@ main{
     }
     
     .empresa .img_lat{
-         width:300px;
+        width:300px;
         height: 150px;
         background-size: contain;
         background-repeat: no-repeat;
-       
-        
     }
-    
-    
-    
-    
     
     .services .text{
         display: block;
-        
         margin: auto;
-       }
+    }
     
-       .services{
+    .services{
         margin-bottom: 25px;
         height: auto;
-        
-       
-       }
+    }
     
-    .serv_desc{
-        
+    .serv_desc{ 
         margin: 0px;
         margin-bottom: 10px;
         width: 100%;
-        height: auto;
-           
+        height: auto;   
     }
+
     #img-services{
-        
         padding-top: 10px;
-        
-        
-        
-        
     }
+
     .fotos-container{
         width: 100%;
         height:auto; 
         box-shadow: none;
-        }
+    }
+
     .line1{
-        padding-top: 15px;
-        
+        padding-top: 15px;        
         display: block;
         width: 100%;
         height: auto;
         margin: auto;
         box-shadow: none;
-       
-       
-       
     }
+    
     .line1 img{
         width: 90%;
         margin: auto;
         margin-top: 10px;
         display: flex;
-        border-radius: 3px;
-               
+        border-radius: 3px;           
     }
 
     .line2{
-        
         padding-top: 15px;
         display: block;
         width: 100%;
         height: auto; 
         margin: auto;
         box-shadow: none;
-        
     }
 
     .line2 img{
@@ -743,36 +690,26 @@ main{
         margin: 0px auto 10px;
         display: flex;
         border-radius: 3px;
-       
-    
-   
-   
-   
-    
-    
-}
+    }
 }
 
 @media screen and (max-width: 550px ){
-    
     label[for="btn_menu"]{
         display: block;
-       visibility: visible;
-        transition: all .4s
+        visibility: visible;
+        transition: all .4s;
 
-   
     }  
    
     .header-background{
-       
-        background-size:100% 60%;
-        
-                
+        background-size:100% 60%;          
     }
+
     .button{
         margin-left: 75%;
         margin-top: 50px;
     }
+
     .button ul{
         position: absolute;
         left: 40%;
@@ -782,7 +719,7 @@ main{
         margin-left: 50px;
         margin-top: 10px;
         z-index: 10;         
-  }
+    }
 
     .button ul a {
         font-size: 30px;
@@ -793,33 +730,23 @@ main{
         border-radius: 3px;
         box-shadow: 2px 2px 2px var(--corShadow); 
         display: none;      
-
     }
+
     .button label{  
-     font-size: 60px;
-       
-        
+        font-size: 60px;  
     }
     
     #btn_menu:checked ~ ul a{
-        display: block;
-        
-        
+        display: block; 
     }
+
     .empresa .img_lat{
         width: 150px;
         height: 90px;
         background-size: contain;
         background-repeat: no-repeat;
-    }
-
-    #img-services {
-      
-    }
-    
-    
+    }  
 }
-
 
 @media screen and (max-width: 430px ) {
     .header-background{
@@ -851,61 +778,52 @@ main{
     }
 
     .button label{  
-     font-size: 50px;    
+        font-size: 50px;    
     }
 
     #slider{
+        width: 100%;
+        height: 250px;
+    }
 
-        width: 100%;
-        height: 250px;
-    }
     .slider{
         width: 100%;
-        height: 250px;
-       
-       
+        height: 250px;  
     }
+
     .slider{
         width: 100%;
         height: 250px;
     }
+
     .slide img{
-       width: 430px;
+        width: 430px;
         height: 250px;
     }
+
     .nav-manual{
         margin-top: -139px;
     }
+
     .nav-auto{
         margin-top: 210px;
     }
-   
-   
 
-
-
-
-   
- 
-    
-    
     .manual-btn:not(:last-child){
         margin-right: 21.3px;
-       
-    
-    }    
+    }   
+
     .nav-auto div:not(:last-child){
         margin-right: 19.5px;
     }
+
     #empresa_link h1{
         font-size: 22px;
         box-shadow: none;
-
     }
     
     .empresa .img_lat{
-       display: none;
-       
+        display: none; 
     }
 
     .empresa .text{
@@ -914,8 +832,8 @@ main{
         margin: auto;
         margin-top: 15px;
         font-size: 16px;
-        
     }
+
     .services{
         height: auto;
     }
@@ -923,9 +841,7 @@ main{
     .service_title{
         width: 100%;
         box-shadow: none;
-        font-size: 22px;
-       
-       
+        font-size: 22px;   
     }
       
     #services_link{
@@ -933,53 +849,42 @@ main{
         box-shadow: none;
     }
     
-
     .services{
         width: 100%;
         box-shadow: none;
-
     }
-
 
     .serv_desc h2{
-        font-size: 20px;
-       
+        font-size: 20px;   
     }
+
     .serv_desc p{
         font-size: 16px;
     }
    
     .footer-container{
         margin-top: 15px;
-        display: block;
-        
+        display: block;    
     }
-   
 
-     .about-text{
+    .about-text{
         font-size: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-     }
+    }
 
     .footer address{
         padding-top: 10px;
         font-size: 16px;
-        text-align: center;
-        
-        
-        
-     }
+        text-align: center;  
+    }
 
-     .footer_autor{
+    .footer_autor{
         margin-top: 15px;
         font-size: 12px;
         line-height: 1.5em;
-     }
-
-    
+    }
 }
-
 
 @media screen and (max-width: 360px ) {
     .button ul{    
