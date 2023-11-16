@@ -534,11 +534,31 @@ main{
     .button ul a {
         margin: 5px;
     }
+
+    #slider{
+        width: 90%;
+        background-color: white;
+        box-shadow: none; 
+    }
+
+    .slider{
+        width: 90%;
+         
+    }
+
+    .nav-auto{
+        width: 90%;
+    }
+    .nav-manual{
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 720px ){
     .header-background{
          height: 180px;
+         background-size: 100% 50%;
     }
 
     .header{
@@ -566,18 +586,25 @@ main{
     .title h1{
         text-align: center;
     }
+    .button{
+        margin: 0px;
+        margin-left: 32%;
+        margin-top:150px;
+    }
+    .button a:hover{
+        transform: none;
+    }
             
-    .button ul{            
-        width: 400px;
+    .button ul{           
         display: flex;
-        margin-top:15%;
-        margin-left: 35%;   
     }
               
     .button ul a {
-        font-size:22px;
+        font-size:18px;
+        justify-content: center;
         width: 200px;
-        margin: 10px;
+        margin: 0px;
+        margin-left: 15px;
         padding: 0px;
     }
 
@@ -702,10 +729,11 @@ main{
     }  
    
     .header-background{
-        background-size:100% 60%;          
+        background-size:100% 50%;          
     }
 
     .button{
+        
         margin-left: 75%;
         margin-top: 50px;
     }
