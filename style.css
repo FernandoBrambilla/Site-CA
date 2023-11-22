@@ -8,7 +8,7 @@
 :root{
     --font1:'Bree Serif';
     --font2:Lucida;
-    --corFundo: #a6bee2;
+    --corFundo: rgb(222,224,225);
     --corHover:rgba(255, 251, 251, 0.859);
     --corShadow: rgba(212, 212, 212, 0.889);
 }
@@ -343,8 +343,7 @@ main{
     width: 100%;
     height: auto;
     margin: 15px;
-    opacity: 0.9;
-    border-radius: 3px;
+     border-radius: 3px;
     box-shadow: 2px 2px 3px var(--corShadow);
  
 }
